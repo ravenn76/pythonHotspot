@@ -12,7 +12,7 @@ def show_menu():
           "\t2 - Config"
           )
     
-    uchoice = input("Choose a option : ")
+    uchoice = int(input("Choose a option : "))
     return uchoice
 
 
@@ -20,6 +20,12 @@ def main():
     uchoice = show_menu()
 
     if uchoice == 1:
-        hotspot_run()
+        run()
+
+    elif uchoice == 2:
+        config()
+        
+    else :
+        print("Unknow option")
 
 main()

@@ -1,4 +1,4 @@
 import dep.module_import
 
-def hotspot_run():
+def run():
     print("Hello world")
